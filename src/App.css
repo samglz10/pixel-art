@@ -1,0 +1,23 @@
+:root {
+  --row-count: 20;
+  --row-cell-count:20;
+}
+*{
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#root{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell{
+  border: 3px solid rgb(2, 2, 2);
+  height: calc(100% / var(--row-count));
+  width: calc(100% /var(--row-cell-count))
+}
