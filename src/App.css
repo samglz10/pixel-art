@@ -19,5 +19,28 @@ html, body, #root {
 .cell{
   border: 3px solid rgb(2, 2, 2);
   height: calc(100% / var(--row-count));
-  width: calc(100% /var(--row-cell-count))
+  width: calc(100% / var(--row-cell-count))
+}
+
+.color-picker{
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  padding: 10px;
+  z-index: 1;
+  width: 50%;
+  border-radius: 5px;
+  background-color: tan;
+}
+
+.color-picker-color {
+  --color-cell-size: 20px;
+  height: var(--color-cell-size);
+  width: var(--color-cell-size);
 }
